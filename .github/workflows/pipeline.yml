@@ -1,0 +1,12 @@
+name: pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    uses: thinkinglabs/continuous-delivery-platform/.github/workflows/pipeline.yml@main
